@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huffman Encoding & Decoding</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- MAIN TITLE -->
+      <h1><strong>Huffman Encoding & Decoding</strong></h1>
+
+      <div class="grid">
+        <section class="encode-section">
+          <h2>Encode Text File</h2>
+          <input type="file" id="encodeFileInput" accept=".txt" />
+          <button id="encodeBtn">Encode & Download</button>
+        </section>
+
+        <section class="decode-section">
+          <h2>Decode Encoded File</h2>
+          <input type="file" id="decodeFileInput" accept=".huf" />
+          <button id="decodeBtn">Decode & Download</button>
+        </section>
+      </div>
+
+      <section class="compression-info">
+        <h2>Compression Info</h2>
+        <div class="info-grid">
+          <p>Original Size: <span id="originalSize"></span> bytes</p>
+          <p>Compressed Size: <span id="compressedSize"></span> bytes</p>
+          <p>Compression: <span id="compressionPercent"></span>%</p>
+        </div>
+      </section>
+
+      <!-- 🌳 Visualization -->
+      <section class="visualization">
+        <h3>Huffman Tree Visualization</h3>
+        <canvas id="treeCanvas" width="900" height="450"></canvas>
+      </section>
+
+      <!-- 📋 Huffman Codes Table -->
+      <section class="codes-section">
+        <h2>Huffman Codes</h2>
+        <table id="codesTable">
+          <thead>
+            <tr>
+              <th>Character</th>
+              <th>Frequency</th>
+              <th>Huffman Code</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
