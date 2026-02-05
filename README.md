@@ -25,5 +25,3 @@ A simple and interactive **Huffman Encoding & Decoding** web application that al
 
 ---
 
-## 📂 Project Structure
-
